@@ -26,7 +26,7 @@ L'ensemble des documents seront écrits en `markdown`, rendus en `markdown` **et
 | Compiler un programme C                                                            | 2                                   | GNU Compiler Collection(GCC), LLVM |
 | Regarder les pages de man de la libC                                               | 2                                   |    	Info, man               |
 | Lancer un `make`                                                                   |                                     |                   		        |
-| Éditer du code source                                                              | 4                                   |VisualCode Studio,Geany             |
+| Éditer du code source                                                              | 4                                   |VisualCode Studio,Geany, Bluefish,            |
 | Déboguer du code                                                                   | 2                                   |            gdb, dbb             	|
 | Naviguer sur le Web                                                                | 2                                   |  Chromium, Firefox, Konqueror      |
 | Naviguer sur le Web avec la version de firefox dans backports                      | 1                                   |                    		|
@@ -53,14 +53,18 @@ Mon choix s'est porté sur i3 car au début de la SAE c'était le seul que je co
 
 #### Deux utilisateurs: vous et "stagiaire":
 
-Ajouter un utilisateur "stagiaire": sudo adduser stagiaire
+Ajouter un utilisateur "stagiaire":
+>`sudo adduser stagiaire`
 
 #### Compiler un programme C:
 
-GNU Compiler Collection(GCC): 
-sudo apt install gcc
+GNU Compiler Collection(GCC):
+>
+>`sudo apt install gcc`
+>
+
 LLVM: 
-sudo apt install llvm
+>`sudo apt install llvm`
 
 #### Regarder les pages de man de la libC:
 
@@ -88,8 +92,8 @@ clean :
 
 #### Éditer du code source:
 
-Geany: apt-get update && apt-get install geany
-
+Geany: 
+>`apt-get update && apt-get install geany`
 
 #### Déboguer du code:
 
@@ -98,11 +102,15 @@ Geany: apt-get update && apt-get install geany
 ...
 #### Éditer une image matricielle (png...)
 
-Gimp: sudo apt install gimp
-Krita: sudo apt install krita
-#### Éditer une image vectorielle (svg)
+Gimp: 
+>`sudo apt install gimp`
 
-Inkscape: sudo apt install inkscape 
+
+Krita:
+>`sudo apt install krita`
+#### Éditer une image vectorielle (svg)
+Inkscape:
+>`sudo apt install inkscape`
 
 #### (Dé)Compresser les formats `targz` et `7z` et `rar`
 
@@ -113,78 +121,66 @@ Inkscape: sudo apt install inkscape
 ## Gestionnaire de paquets
 
 * Pour Installer un logiciel
-> 
 > `apt install/apt-get install`
-> 
-
 
 * Pour Désinstaller un logiciel.
-> 
 > `apt remove`
-> 
 
 * Pour Faire une recherche sur les paquets disponibles.
-> 
 > `apt search`
-> 
 
 * Pour Lister les fichiers installés par un paquet.
-
-> 
 > `apt-update`
-> 
 
-* Pour Rechercher quel paquet contient un fichier donné.
-> 
+* Pour Rechercher quel paquet contient un fichier donné. 
 > `dpkg –list paquet`
->
 
 * Pour Idem si le paquet n'est pas installé.
 
 
 ### Réseau
 
-* Pouvoir se connecter sur une autre machine avec `ssh`.
+#### Pouvoir se connecter sur une autre machine avec `ssh`.
 
 
-* Permettre à une autre machine de se connecter sur la vôtre.
+#### Permettre à une autre machine de se connecter sur la vôtre.
 
 
-* Installer un serveur web capable de lire vos pages perso (`userdir`).
+#### Installer un serveur web capable de lire vos pages perso (`userdir`).
 
 ### Sauvegardes
 
-* Faire une archive d'un répertoire (et de ses sous répertoires).
+#### Faire une archive d'un répertoire (et de ses sous répertoires).
 
 
-* Copier l'archive sur une clé USB.
+#### Copier l'archive sur une clé USB.
 
 
-* Copier l'archive via `scp` (vous pouvez vous entraîner sur `localhost`).
+#### Copier l'archive via `scp` (vous pouvez vous entraîner sur `localhost`).
 
 
 
 ### Services (voir `systemd` ou autre selon OS)
 
-* Savoir démarrer/stopper un service.
+#### Savoir démarrer/stopper un service.
+> `systemctl start/stop`
 
+#### Savoir en vérifier l'état.
+> `systemctl  status`
 
-* Savoir en vérifier l'état.
-
-
-* Savoir afficher les messages d'erreur.
-
+#### Savoir afficher les messages d'erreur.
+> `systemctl  status`
 
 ### Divers
 
-* Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
+#### Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
 
 
 ### Bonus
 
-* Écrire un service utilisateur qui se lance dès la connexion de l'utilisateur.
-* Écrire un service qui se lance périodiquement.
-* Installer un logiciel propriétaire en restreignant ses droits d'accès à votre environnement.
+#### Écrire un service utilisateur qui se lance dès la connexion de l'utilisateur.
+#### Écrire un service qui se lance périodiquement.
+#### Installer un logiciel propriétaire en restreignant ses droits d'accès à votre environnement.
 
 ## Schéma d'architecture logicielle
 
