@@ -2,11 +2,22 @@
 
 Installation d'un poste pour le développement
 ---------------------------------------------
-## Installation du système de base
 
-L'OS que j'ai choisi est Debian car c'était un des seuls que je connaissais et que j'appréciais bien car cet un logiciel libre. Un système d'exploitation stable, sûr puisqu'il fournit une configuration par défaut correcte pour chaque paquet ainsi que des mises à jour de sécurité régulières pour toute la durée de vie des paquets.
+## Dossier d'étude et de choix des solutions
 
-## Installation et Essai sur mon système de logiciels répondant à des besoins
+Rédigez un dossier synthétique de trois pages maximum. 
+
+Ce dossier reprend le tableau des besoins (voir plus haut) complété en indiquant par besoin les logiciels que vous proposez. 
+Vous trierez la liste des logiciels proposés suivant vos préférences.
+
+# Détail des livrables
+
+L'ensemble des documents seront écrits en `markdown`, rendus en `markdown` **et** en PDF (voir `pandoc` par exemple). Les schémas seront en [vectoriel](https://fr.wikipedia.org/wiki/Image_vectorielle).
+
+
+
+
+### Installation et Essai sur mon système de logiciels répondant à des besoins
 
 | Besoin                                                                             | Nombre d'outils différents demandés | 	     Logiciels proposés 	|
 | ---------------------------------------------------------------------------------- |-------------------------------------|------------------------------------|
@@ -24,9 +35,9 @@ L'OS que j'ai choisi est Debian car c'était un des seuls que je connaissais et 
 | (Dé)Compresser les formats `targz` et `7z` et `rar`                                | 1                                   |                    		|
 
 
-# Commande utilisée pour chacun des outils
+## Commande utilisée pour chacun des outils
 
-## Gestionnaires de bureau/fenêtre:
+### Gestionnaires de bureau/fenêtre:
 
 Installation de l'environnement de bureau Xfce4 : sudo apt-get install xfce4
 Puis lors du premier démarrage: startxfce4
@@ -40,20 +51,20 @@ J'ai effectué cette commande pour avoir l'ensemble complet et non pas le minimu
 Installation du gestionnaire de fenêtre i3: sudo apt install i3
 Mon choix s'est porté sur i3 car au début de la SAE c'était le seul que je connaissais. De plus, il est facilement personnalisable et permet de pratiquer la saisie de commandes pour s'améliorer
 
-## Deux utilisateurs: vous et "stagiaire":
+### Deux utilisateurs: vous et "stagiaire":
 
 Ajouter un utilisateur "stagiaire": sudo adduser stagiaire
 
-## Compiler un programme C:
+### Compiler un programme C:
 
 .GNU Compiler Collection(GCC): sudo apt install gcc
 .LLVM: sudo apt install llvm
 
 
-## Regarder les pages de man de la libC:
+### Regarder les pages de man de la libC:
 
 
-## Lancer un 'make':
+### Lancer un 'make':
 
 Voici mon Makefile
 
@@ -74,24 +85,24 @@ exo.o : exo.c exo.h
 clean :
 	rm -f testExo *.o
 
-## Éditer du code source:
+### Éditer du code source:
 
 Geany: apt-get update && apt-get install geany
 
 
-## Déboguer du code:
+### Déboguer du code:
 
 
-*Naviguer sur le Web avec la version de firefox dans backports
-*Éditer une image matricielle (png...)
-*Éditer une image vectorielle (svg) 
-*(Dé)Compresser les formats `targz` et `7z` et `rar`
+### Naviguer sur le Web avec la version de firefox dans backports
+### Éditer une image matricielle (png...)
+### Éditer une image vectorielle (svg) 
+### (Dé)Compresser les formats `targz` et `7z` et `rar`
 
 
 
 
 
-### Gestionnaire de paquets
+## Gestionnaire de paquets
 
 * Pour Installer un logiciel
 
@@ -155,35 +166,6 @@ Geany: apt-get update && apt-get install geany
 * Écrire un service qui se lance périodiquement.
 * Installer un logiciel propriétaire en restreignant ses droits d'accès à votre environnement.
 
-
-# Détail des livrables
-
-L'ensemble des documents seront écrits en `markdown`, rendus en `markdown` **et** en PDF (voir `pandoc` par exemple). Les schémas seront en [vectoriel](https://fr.wikipedia.org/wiki/Image_vectorielle).
-
-## Dossier d'étude et de choix des solutions
-
-Rédigez un dossier synthétique de trois pages maximum. 
-
-Ce dossier reprend le tableau des besoins (voir plus haut) complété en indiquant par besoin les logiciels que vous proposez. 
-Vous trierez la liste des logiciels proposés suivant vos préférences.
-
-
-## Notice d'utilisation
-
-La notice d'utilisation est ici à destination d'un utilisateur souhaitant reproduire à l'identique le système que vous avez créé.
-
-Nous attendons à trouver dans votre notice d'utilisation l'application des compétences acquises en cours/TP de PPP sur la constitution et la réalisation d'un manuel utilisateur, ici "un guide d'installation".
-
-Elle reprend les choix principaux que vous avez faits pendant l'installation. 
-
-## Présentation orale
-
-Lors de cette présentation orale de sept minutes (éventuellement échelonnée au cours des TP) vous présenterez à votre enseignant vos productions de la SAÉ (dossier d'étude et de choix des solutions, notice d'utilisation, schéma de l'architecture logicielle).
-
-Votre enseignant évaluera le fond, la forme et votre capacité à répondre aux questions qu'il vous posera.
-
-Cette présentation orale sera également l'occasion d'évaluer votre capacité à traduire à la volée en français, un texte technique en anglais (extrait d'une page de manuel, messages d'erreurs, ...), en rapport à vos cours/TP d'anglais sur la constitution d'un lexique. 
-
 ## Schéma d'architecture logicielle
 
 Faites un schéma (donc en [vectoriel](https://fr.wikipedia.org/wiki/Image_vectorielle)) donnant les informations suivantes :
@@ -195,9 +177,3 @@ Faites un schéma (donc en [vectoriel](https://fr.wikipedia.org/wiki/Image_vecto
 * Avec quel élément de votre schéma le gestionnaire de bureaux/fenêtres que vous utilisez communiquent ?
 
 
-
-
-
-
-
-sublimetext: wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg
