@@ -53,10 +53,7 @@ LLVM:
 #### Regarder les pages de man de la libC:
 
 Man:
->
-
-Info:
->
+> man3 "nom de la commande que l'on veux man"
 
 #### Lancer un 'make':
 Pour pouvoir lancer le paquet make il faut l'installer avec la commande:
@@ -125,12 +122,12 @@ Pour l'installation de 7zip que j'ai choisi car c'est celui que j'utilise le plu
 > ``
 
 #### Permettre à une autre machine de se connecter sur la vôtre.
-
+Créer un fichier authorized_keys dans son ~/.ssh.
 >``
 
 #### Installer un serveur web capable de lire vos pages perso (`userdir`)
 
->``
+>`sudo apt-install apache2`
 
 ### Sauvegardes
 
