@@ -59,9 +59,7 @@ Ajouter un utilisateur "stagiaire":
 #### Compiler un programme C:
 
 GNU Compiler Collection(GCC):
->
 >`sudo apt install gcc`
->
 
 LLVM: 
 >`sudo apt install llvm`
@@ -70,25 +68,8 @@ LLVM:
 
 
 #### Lancer un 'make':
-
-Voici mon Makefile
-
-CC = gcc
-CFLAGS = -Wall -fPIC
-
-all : testExo
-
-testExo : testExo.o exo.o
-	$(CC) -o testExo testExo.o exo.o
-	
-testExo.o : testExo.c exo.h
-	$(CC) -c $(CFLAGS) testExo.c
-	
-exo.o : exo.c exo.h
-	$(CC) -c $(CFLAGS) exo.c
-	
-clean :
-	rm -f testExo *.o
+Pour pouvoir lancer le paquet make il faut l'installer avec la commande:
+> `sudo apt install make`
 
 #### Éditer du code source:
 
@@ -97,6 +78,8 @@ Geany:
 
 #### Déboguer du code:
 
+GDB:
+> `sudo apt`
 
 #### Naviguer sur le Web avec la version de firefox dans backports
 ...
@@ -105,25 +88,24 @@ Geany:
 Gimp: 
 >`sudo apt install gimp`
 
-
 Krita:
 >`sudo apt install krita`
+>
 #### Éditer une image vectorielle (svg)
 Inkscape:
 >`sudo apt install inkscape`
 
 #### (Dé)Compresser les formats `targz` et `7z` et `rar`
-
-
-
+Pour l'installation de 7zip que j'ai choisi car c'est celui que j'utilise le plus et celui donc que je maîtrise le mieux, il faut rentrer la commande:
+>`sudo apt install p7zip`
 
 
 ## Gestionnaire de paquets
 
-* Pour Installer un logiciel
+* Pour Installer un logiciel:
 > `apt install/apt-get install`
 
-* Pour Désinstaller un logiciel.
+* Pour Désinstaller un logiciel:
 > `apt remove`
 
 * Pour Faire une recherche sur les paquets disponibles.
@@ -174,22 +156,3 @@ Inkscape:
 ### Divers
 
 #### Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
-
-
-### Bonus
-
-#### Écrire un service utilisateur qui se lance dès la connexion de l'utilisateur.
-#### Écrire un service qui se lance périodiquement.
-#### Installer un logiciel propriétaire en restreignant ses droits d'accès à votre environnement.
-
-## Schéma d'architecture logicielle
-
-Faites un schéma (donc en [vectoriel](https://fr.wikipedia.org/wiki/Image_vectorielle)) donnant les informations suivantes :
-  
-* Comment s'appelle l'élément logiciel qui gère votre carte réseau (comme un driver) ?
-* Comment s'appelle l'élément logiciel qui gère votre carte graphique (comme un driver) ?
-* Quel est le chemin du périphérique (*device*) qui représente votre carte graphique ?
-* Quel est le nom du *serveur graphique* que vous utilisez ?
-* Avec quel élément de votre schéma le gestionnaire de bureaux/fenêtres que vous utilisez communiquent ?
-
-
