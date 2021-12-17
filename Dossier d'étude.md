@@ -24,15 +24,15 @@ L'ensemble des documents seront écrits en `markdown`, rendus en `markdown` **et
 | Avoir des Gestionnaires de bureau/fenêtre (dont un qui vous plaise)                | 4                                   | Xfce4, GNOME, i3, LXDE             |
 | Avoir deux utilisateurs: vous et "stagiaire"                                       |                                     | jules, stagiaire                   |
 | Compiler un programme C                                                            | 2                                   | GNU Compiler Collection(GCC), LLVM |
-| Regarder les pages de man de la libC                                               | 2                                   |    man,                 		|
+| Regarder les pages de man de la libC                                               | 2                                   |    	Info, man               |
 | Lancer un `make`                                                                   |                                     |                   		        |
-| Éditer du code source                                                              | 4                                   |VisualCode Studio,Geany                 |
-| Déboguer du code                                                                   | 2                                   |            ( gdb, dbb  )             |
+| Éditer du code source                                                              | 4                                   |VisualCode Studio,Geany             |
+| Déboguer du code                                                                   | 2                                   |            gdb, dbb             	|
 | Naviguer sur le Web                                                                | 2                                   |  Chromium, Firefox, Konqueror      |
 | Naviguer sur le Web avec la version de firefox dans backports                      | 1                                   |                    		|
-| Éditer une image matricielle (png...)                                              | 2                                   |           ( GIMP, Krita )           	|
-| Éditer une image vectorielle (svg)                                                 | 1                                   |            (  Inkscape  )   		|
-| (Dé)Compresser les formats `targz` et `7z` et `rar`                                | 1                                   |                    		|
+| Éditer une image matricielle (png...)                                              | 2                                   |           GIMP, Krita          	|
+| Éditer une image vectorielle (svg)                                                 | 1                                   |             Inkscape    		|
+| (Dé)Compresser les formats `targz` et `7z` et `rar`                                | 1                                   |                7zip    		|
 
 
 ## Commande utilisée pour chacun des outils
