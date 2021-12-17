@@ -27,7 +27,7 @@ L'ensemble des documents seront écrits en `markdown`, rendus en `markdown` **et
 | Regarder les pages de man de la libC                                               | 2                                   |    	Info, man               |
 | Lancer un `make`                                                                   |                                     |                   		        |
 | Éditer du code source                                                              | 4                                   |VisualCode Studio,Geany, Bluefish,            |
-| Déboguer du code                                                                   | 2                                   |            gdb, dbb             	|
+| Déboguer du code                                                                   | 2                                   |            gdb, valgrind           	|
 | Naviguer sur le Web                                                                | 2                                   |  Chromium, Firefox, Konqueror      |
 | Naviguer sur le Web avec la version de firefox dans backports                      | 1                                   |                    		|
 | Éditer une image matricielle (png...)                                              | 2                                   |           GIMP, Krita          	|
@@ -66,6 +66,11 @@ LLVM:
 
 #### Regarder les pages de man de la libC:
 
+Man:
+>
+
+Info:
+>
 
 #### Lancer un 'make':
 Pour pouvoir lancer le paquet make il faut l'installer avec la commande:
@@ -79,7 +84,10 @@ Geany:
 #### Déboguer du code:
 
 GDB:
-> `sudo apt`
+> `sudo apt gdb`
+
+Valgrind:
+> `sudo apt-get install valgrind --classic`
 
 #### Naviguer sur le Web avec la version de firefox dans backports
 ...
@@ -109,36 +117,48 @@ Pour l'installation de 7zip que j'ai choisi car c'est celui que j'utilise le plu
 > `apt remove`
 
 * Pour Faire une recherche sur les paquets disponibles.
-> `apt search`
+>`dpkg -l "nom du paquet"`
 
-* Pour Lister les fichiers installés par un paquet.
+* Pour Faire une mise à jour:
 > `apt-update`
 
-* Pour Rechercher quel paquet contient un fichier donné. 
+* Pour Lister les fichiers installés par un paquet.
 > `dpkg –list paquet`
 
+* Pour Rechercher quel paquet contient un fichier donné. 
+> `dpkg –S "nom du fichier"`
+
 * Pour Idem si le paquet n'est pas installé.
+>> ``
 
 
 ### Réseau
 
-#### Pouvoir se connecter sur une autre machine avec `ssh`.
+#### Pouvoir se connecter sur une autre machine avec `ssh`
 
+> 
 
 #### Permettre à une autre machine de se connecter sur la vôtre.
 
+>
 
-#### Installer un serveur web capable de lire vos pages perso (`userdir`).
+#### Installer un serveur web capable de lire vos pages perso (`userdir`)
+
+>
 
 ### Sauvegardes
 
 #### Faire une archive d'un répertoire (et de ses sous répertoires).
 
+>
 
 #### Copier l'archive sur une clé USB.
 
+>
 
-#### Copier l'archive via `scp` (vous pouvez vous entraîner sur `localhost`).
+#### Copier l'archive via `scp` (vous pouvez vous entraîner sur `localhost`)
+
+> `scp (source) @iplocal (destination)`
 
 
 
@@ -151,8 +171,10 @@ Pour l'installation de 7zip que j'ai choisi car c'est celui que j'utilise le plu
 > `systemctl  status`
 
 #### Savoir afficher les messages d'erreur.
-> `systemctl  status`
+> sudo journalctl -u "nom du service" | grep "failed"`
 
 ### Divers
 
 #### Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
+
+>chmod 711 ~/
