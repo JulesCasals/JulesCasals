@@ -113,19 +113,31 @@ Inkscape: sudo apt install inkscape
 ## Gestionnaire de paquets
 
 * Pour Installer un logiciel
+> 
+> `apt install/apt-get install`
+> 
 
 
 * Pour Désinstaller un logiciel.
-
+> 
+> `apt remove`
+> 
 
 * Pour Faire une recherche sur les paquets disponibles.
-
+> 
+> `apt search`
+> 
 
 * Pour Lister les fichiers installés par un paquet.
 
+> 
+> `apt-update`
+> 
 
 * Pour Rechercher quel paquet contient un fichier donné.
-
+> 
+> `dpkg –list paquet`
+>
 
 * Pour Idem si le paquet n'est pas installé.
 
