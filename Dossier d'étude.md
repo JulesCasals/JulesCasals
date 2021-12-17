@@ -119,7 +119,7 @@ Pour l'installation de 7zip que j'ai choisi car c'est celui que j'utilise le plu
 
 #### Pouvoir se connecter sur une autre machine avec `ssh`
 
-> ``
+> `ssh -v "nomutilisateur" @ipserveur `
 
 #### Permettre à une autre machine de se connecter sur la vôtre.
 Créer un fichier authorized_keys dans son ~/.ssh.
@@ -133,17 +133,15 @@ Créer un fichier authorized_keys dans son ~/.ssh.
 
 #### Faire une archive d'un répertoire (et de ses sous répertoires).
 
->``
+>`tar cfvj nom.gz.bz2 /home/jucasals`
 
 #### Copier l'archive sur une clé USB.
 
->``
+>`cp "/chemin/de/archive/" /media/nom de la clé`
 
 #### Copier l'archive via `scp` (vous pouvez vous entraîner sur `localhost`)
 
 > `scp (source) @iplocal (destination)`
-
-
 
 ### Services (voir `systemd` ou autre selon OS)
 
@@ -160,4 +158,4 @@ Créer un fichier authorized_keys dans son ~/.ssh.
 
 #### Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
 
->`chmod 711 ~/`
+>`chmod 711 /home/`
