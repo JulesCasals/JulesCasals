@@ -3,20 +3,6 @@
 Installation d'un poste pour le développement
 ---------------------------------------------
 
-## Dossier d'étude et de choix des solutions
-
-Rédigez un dossier synthétique de trois pages maximum. 
-
-Ce dossier reprend le tableau des besoins (voir plus haut) complété en indiquant par besoin les logiciels que vous proposez. 
-Vous trierez la liste des logiciels proposés suivant vos préférences.
-
-# Détail des livrables
-
-L'ensemble des documents seront écrits en `markdown`, rendus en `markdown` **et** en PDF (voir `pandoc` par exemple). Les schémas seront en [vectoriel](https://fr.wikipedia.org/wiki/Image_vectorielle).
-
-
-
-
 ### Installation et Essai sur mon système de logiciels répondant à des besoins
 
 | Besoin                                                                             | Nombre d'outils différents demandés | 	     Logiciels proposés 	|
@@ -129,32 +115,32 @@ Pour l'installation de 7zip que j'ai choisi car c'est celui que j'utilise le plu
 > `dpkg –S "nom du fichier"`
 
 * Pour Idem si le paquet n'est pas installé.
->> ``
+> ``
 
 
 ### Réseau
 
 #### Pouvoir se connecter sur une autre machine avec `ssh`
 
-> 
+> ``
 
 #### Permettre à une autre machine de se connecter sur la vôtre.
 
->
+>``
 
 #### Installer un serveur web capable de lire vos pages perso (`userdir`)
 
->
+>``
 
 ### Sauvegardes
 
 #### Faire une archive d'un répertoire (et de ses sous répertoires).
 
->
+>``
 
 #### Copier l'archive sur une clé USB.
 
->
+>``
 
 #### Copier l'archive via `scp` (vous pouvez vous entraîner sur `localhost`)
 
@@ -177,4 +163,4 @@ Pour l'installation de 7zip que j'ai choisi car c'est celui que j'utilise le plu
 
 #### Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
 
->chmod 711 ~/
+>`chmod 711 ~/`
