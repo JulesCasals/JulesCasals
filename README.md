@@ -1,21 +1,12 @@
 #markdown
 
-title: Installation d'un poste pour le développement
-
-## Aperçu des livrables
-
-- Dossier d'étude et de choix des solutions, 13 points. Cette partie sera aussi évaluée à l'oral.
-- Notice d'installation et d'utilisation, 3 points. Cette partie sera aussi évaluée à l'oral.
-- Présentation orale en anglais, 2 points. Il s'agit d'anglais technique. 
-- Schéma de l'architecture logicielle, 2 points.
-
-# Sujet détaillé
-
+Installation d'un poste pour le développement
+---------------------------------------------
 ## Installation du système de base
 
 L'OS que j'ai choisi est Debian car c'était un des seuls que je connaissais et que j'appréciais bien car cet un logiciel libre. Un système d'exploitation stable, sûr puisqu'il fournit une configuration par défaut correcte pour chaque paquet ainsi que des mises à jour de sécurité régulières pour toute la durée de vie des paquets.
 
-Installation et Essai sur mon système de logiciels répondant à des besoins
+## Installation et Essai sur mon système de logiciels répondant à des besoins
 
 | Besoin                                                                             | Nombre d'outils différents demandés | 	     Logiciels proposés 	|
 | ---------------------------------------------------------------------------------- |-------------------------------------|------------------------------------|
@@ -59,10 +50,10 @@ Ajouter un utilisateur "stagiaire": sudo adduser stagiaire
 .LLVM: sudo apt install llvm
 
 
-## Regarder les pages de man de la libC:
+## Regarder les pages de man de la libC:
 
 
-## Lancer un 'make':
+## Lancer un 'make':
 
 Voici mon Makefile
 
@@ -83,7 +74,7 @@ exo.o : exo.c exo.h
 clean :
 	rm -f testExo *.o
 
-## Éditer du code source:
+## Éditer du code source:
 
 Geany: apt-get update && apt-get install geany
 
