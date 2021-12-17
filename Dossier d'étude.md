@@ -1,4 +1,4 @@
-#markdown
+# Markdown
 
 Installation d'un poste pour le développement
 ---------------------------------------------
@@ -37,7 +37,7 @@ L'ensemble des documents seront écrits en `markdown`, rendus en `markdown` **et
 
 ## Commande utilisée pour chacun des outils
 
-### Gestionnaires de bureau/fenêtre:
+#### Gestionnaires de bureau/fenêtre:
 
 Installation de l'environnement de bureau Xfce4 : sudo apt-get install xfce4
 Puis lors du premier démarrage: startxfce4
@@ -51,20 +51,21 @@ J'ai effectué cette commande pour avoir l'ensemble complet et non pas le minimu
 Installation du gestionnaire de fenêtre i3: sudo apt install i3
 Mon choix s'est porté sur i3 car au début de la SAE c'était le seul que je connaissais. De plus, il est facilement personnalisable et permet de pratiquer la saisie de commandes pour s'améliorer
 
-### Deux utilisateurs: vous et "stagiaire":
+#### Deux utilisateurs: vous et "stagiaire":
 
 Ajouter un utilisateur "stagiaire": sudo adduser stagiaire
 
-### Compiler un programme C:
+#### Compiler un programme C:
 
-.GNU Compiler Collection(GCC): sudo apt install gcc
-.LLVM: sudo apt install llvm
+GNU Compiler Collection(GCC): 
+sudo apt install gcc
+LLVM: 
+sudo apt install llvm
+
+#### Regarder les pages de man de la libC:
 
 
-### Regarder les pages de man de la libC:
-
-
-### Lancer un 'make':
+#### Lancer un 'make':
 
 Voici mon Makefile
 
@@ -85,18 +86,25 @@ exo.o : exo.c exo.h
 clean :
 	rm -f testExo *.o
 
-### Éditer du code source:
+#### Éditer du code source:
 
 Geany: apt-get update && apt-get install geany
 
 
-### Déboguer du code:
+#### Déboguer du code:
 
 
-### Naviguer sur le Web avec la version de firefox dans backports
-### Éditer une image matricielle (png...)
-### Éditer une image vectorielle (svg) 
-### (Dé)Compresser les formats `targz` et `7z` et `rar`
+#### Naviguer sur le Web avec la version de firefox dans backports
+...
+#### Éditer une image matricielle (png...)
+
+Gimp: sudo apt install gimp
+Krita: sudo apt install krita
+#### Éditer une image vectorielle (svg)
+
+Inkscape: sudo apt install inkscape 
+
+#### (Dé)Compresser les formats `targz` et `7z` et `rar`
 
 
 
